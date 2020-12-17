@@ -13,11 +13,10 @@
   </head>
   <body>
         
-     <div style="width: 100%; height: 30px; z-index: 999; background-color: blue">
-    
+        
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
-            
-            <div style="width: 100%; height: 50px; z-index: 999; background-color: red">
+ 
+            <div style="position: absolute;top: 20px; z-index: 999"><img src="../top.png" style="width: 120%"></div>
             <a-image id="target" src="../protopark.png" look-at="[gps-camera]" gps-entity-place></a-image>
             <a-image id="target2" src="../protogarbage.png" look-at="[gps-camera]" gps-entity-place></a-image>
             
@@ -53,8 +52,8 @@
             navigator.geolocation.getCurrentPosition(position => {
                 window.COORD=position.coords
  
-                mark(210,0,5,document.getElementById('target'))
-                mark(20,-20,3,document.getElementById('target2'))          
+                mark(0,0,50,document.getElementById('target'))
+                mark(0,0,5,document.getElementById('target2'))          
       });
  
                             
