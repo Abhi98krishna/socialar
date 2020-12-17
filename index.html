@@ -13,7 +13,7 @@
   </head>
   <body>
         
-    <img src="../top.png" style="position:absolute; z-index: 999; left:50px; top:50px; height:60px; width:auto">  
+    <img src="../top.png" style="position:absolute; z-index: 999; top:50px; height:60px; width:auto">  
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;" vr-mode-ui="enabled: false">
  
             
@@ -52,8 +52,8 @@
             navigator.geolocation.getCurrentPosition(position => {
                 window.COORD=position.coords
  
-                mark(0,0,50,document.getElementById('target'))
-                mark(0,0,5,document.getElementById('target2'))          
+                mark(210,0,5,document.getElementById('target'))
+                mark(20,-20,3,document.getElementById('target2'))          
       });
  
                             
